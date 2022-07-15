@@ -1,0 +1,36 @@
+@import '../mixins/mixins.scss';
+.main_create{
+    padding: 3.5rem 0 1rem 0;
+
+    .container {
+        max-width: var(--container-md);
+        margin: var(--margin-auto);
+        text-align: center;
+
+        h1 {
+            text-transform: uppercase;
+            color: var(--primary-color);
+            padding-bottom: 1.25rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: .625rem;
+        }
+
+        .col {
+            width: 100%;
+            display: flex;
+        }
+        input {
+            width: 70%;
+            background-color: lightgray;
+            border: 1px solid rgb(159, 159, 159);
+        }
+        label {
+            width: 30%;
+            text-transform: uppercase;
+        }
+        
+    }
+}

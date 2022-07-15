@@ -609,3 +609,41 @@ body {
   border-right: 0.0625rem solid #d8d8d8;
 }
 
+.main_create {
+  padding: 3.5rem 0 1rem 0;
+}
+
+.main_create .container {
+  max-width: var(--container-md);
+  margin: var(--margin-auto);
+  text-align: center;
+}
+
+.main_create .container h1 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  padding-bottom: 1.25rem;
+}
+
+.main_create .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.main_create .container .col {
+  width: 100%;
+  display: flex;
+}
+
+.main_create .container input {
+  width: 70%;
+  background-color: lightgray;
+  border: 1px solid rgb(159, 159, 159);
+}
+
+.main_create .container label {
+  width: 30%;
+  text-transform: uppercase;
+}
+
