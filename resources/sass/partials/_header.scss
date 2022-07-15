@@ -1,0 +1,80 @@
+@import '../mixins/mixins.scss';
+.header {
+    &_top {
+        background-color: var(--primary-color);
+        width: 100%;
+        &_container {
+            font-size: .5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: end;
+            gap: 1.25rem;
+            padding: .1875rem 0;
+            max-width: var(--container-lg);
+            margin: var(--margin-auto);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    text-transform: uppercase;
+    &_container {
+        max-width: var(--container-lg);
+        @include flex ('between', 'center');
+        margin: var(--margin-auto);
+        gap: 3.125rem;
+    }
+    &_logo {
+        margin: 0.8rem 0;
+        img {
+            width: 80px;
+            vertical-align: middle
+        }
+        flex-grow: 1;
+    }
+    &_nav{
+        ul {
+            @include listInLine;
+            li {
+                margin: 0 0.8rem;
+            }
+            .active {
+                border-bottom: 0.3rem solid var(--primary-color);
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: var(--font-sm);
+                font-weight: 500;
+                color: var(--secondary-color);
+                padding: 2.7rem 0;
+
+                i {
+                    color: var(--primary-color);
+                }
+            }
+            .active a {
+                color: var(--primary-color);
+            }
+        }
+    }
+    &_search {
+        input {
+            border: 0;
+            text-align: right;
+            padding-right: .3125rem;
+        }
+
+        input::placeholder {
+            color: black;
+            font-size: 1rem;
+        }
+
+        i, input{
+            border-bottom: .125rem solid var(--primary-color);
+            padding-bottom: .125rem;
+        }
+    }
+}

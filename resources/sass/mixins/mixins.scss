@@ -1,0 +1,43 @@
+@mixin flex ($justify, $align) {
+    display: flex;
+    // justify 
+    @if ($justify == 'center') {
+        justify-content: center;
+    }
+    @if ($justify == 'start') {
+        justify-content: flex-start;
+    }
+    @if ($justify == 'end') {
+        justify-content: flex-end;
+    }
+    @if ($justify == 'between') {
+        justify-content:space-between;
+    }
+    @if ($justify == 'around') {
+        justify-content:space-around;
+    }
+    // align 
+    @if ($align == 'center') {
+        align-items: center;
+    }
+    @if ($align == 'start') {
+        align-items: flex-start;
+    } 
+    @if ($align == 'end') {
+        align-items: flex-end;
+    }
+}
+
+@mixin listInLine {
+    display: flex;
+    list-style: none;
+}
+
+@mixin blueButton {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: .625rem 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
