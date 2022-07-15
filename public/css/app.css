@@ -480,6 +480,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .main_card .section_card .bottom_card .container .col {
@@ -566,6 +567,30 @@ body {
 
 .main_card .section_card .bottom_card .container .series a {
   text-transform: uppercase;
+}
+
+.main_card .section_card .bottom_card .container .row.cta {
+  justify-content: center;
+}
+
+.main_card .section_card .bottom_card .container .edit {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  padding: 0.625rem 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main_card .section_card .bottom_card .container .destroy {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  padding: 0.625rem 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: red;
+  border: 1px solid red;
 }
 
 .main_card .section_card .contents {

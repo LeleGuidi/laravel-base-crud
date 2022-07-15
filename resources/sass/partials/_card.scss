@@ -139,6 +139,7 @@
                     display: flex;
                     justify-content: space-between;
                     gap: 1.25rem;
+                    padding-bottom: 1.25rem;
                 }
 
                 .col {
@@ -181,7 +182,19 @@
                 }
                 .series a {
                     text-transform: uppercase;
-                }   
+                }  
+
+                .row.cta {
+                    justify-content: center
+                }
+                .edit {
+                    @include blueButton;
+                }
+                .destroy {
+                    @include blueButton;
+                    background-color: red;
+                    border: 1px solid red;
+                }
             }
         }
         .contents {

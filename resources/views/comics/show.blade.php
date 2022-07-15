@@ -48,18 +48,12 @@
                             <span>Art by:</span>
                             <p>
                                 {{$comic['artists']}}
-                                {{-- @foreach($comic['artists'] as $key => $artist) 
-                                    <a href="/#">{{$artist}}</a>@if ($key + 1 != count($comic['artists'])), @endif
-                                @endforeach --}}
                             </p>
                         </div>
                         <div class="writtenby">
                             <span>Written by:</span>
                             <p>
                                 {{$comic['writers']}}
-                                {{-- @foreach($comic['writers'] as $key => $writer) 
-                                    <a href="/#">{{$writer}}</a>@if ($key + 1 != count($comic['writers'])), @endif
-                                @endforeach --}}
                             </p>
                         </div>
                     </div>
@@ -80,6 +74,16 @@
                             <p>{{$comic['sale_date']}}</p> 
                         </div>
                     </div>
+                </div>
+                <div class="row cta">
+                    <a href="{{route('comics.edit', $comic->id)}}">
+                        <button class="edit">Modifica</button>
+                    </a>
+                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <input type="submit" class="destroy" value="Elimina">
+                    </form>
                 </div>
             </div>
         </div>
