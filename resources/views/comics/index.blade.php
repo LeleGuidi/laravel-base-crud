@@ -21,7 +21,7 @@
             @endforeach
         </div>
         <a href="{{Route('comics.create')}}">
-            <button>load more</button>
+            <button>Aggiungi altri fumetti</button>
         </a>
     </section>
     <div class="cards_bottom">

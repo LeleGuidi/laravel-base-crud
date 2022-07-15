@@ -18,7 +18,7 @@
                 <input type="textarea" name="description" required>
             </div>
             <div class="col">
-                <label for="thumb">Ccollegamento per la copertina</label>
+                <label for="thumb">URL copertina</label>
                 <input type="text" name="thumb" required>
             </div>
             <div class="col">
@@ -45,7 +45,7 @@
                 <label for="writers">Scrittori</label>
                 <input type="text" name="writers" required>
             </div>
-            <input type="submit" value="INVIA">
+            <input id="invia" type="submit" value="INVIA">
         </form>
     </div>
 </main>

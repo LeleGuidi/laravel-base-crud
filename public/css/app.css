@@ -645,5 +645,17 @@ body {
 .main_create .container label {
   width: 30%;
   text-transform: uppercase;
+  text-align: right;
+  padding-right: 0.3125rem;
+}
+
+.main_create .container #invia {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  padding: 0.625rem 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
 }
 

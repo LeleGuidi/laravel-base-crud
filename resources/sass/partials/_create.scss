@@ -30,6 +30,13 @@
         label {
             width: 30%;
             text-transform: uppercase;
+            text-align: right;
+            padding-right: .3125rem;
+        }
+
+        #invia {
+            @include blueButton;
+            width: 100%;
         }
         
     }
